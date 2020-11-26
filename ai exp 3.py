@@ -16,6 +16,6 @@ with mic as source:
 try:
     print("Your name & UID is:"+r.recognize_google(audio1)+r.recognize_google(audio2));
 except:
-    print("Sorry! Unable to recognize.")
+    print("Sorry! Unable to recognize ur voice.")
     pass;
 
