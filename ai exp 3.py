@@ -7,9 +7,9 @@ mic = sr.Microphone(device_index=1)
 
 with mic as source:
     r.adjust_for_ambient_noise(source,duration=1)
-    print("Say your name:")
+    print("Say name:")
     audio1=r.listen(source,timeout=40)
-    print("Say your UID:")
+    print("Say UID:")
     audio2=r.listen(source,timeout=20)
     print("Thanks!")
     
